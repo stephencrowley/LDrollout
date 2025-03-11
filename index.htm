@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LaunchDarkly demo</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <script src="https://unpkg.com/launchdarkly-js-client-sdk@3"></script>  
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+
+        const context = {
+            kind: 'user',
+            key: '1'
+        };
+
+        const ldclient = LDClient.initialize('60f80a31bbda2a24f5fe6908', context);
+      
+
+
+            function createContext(n) {
+                return ({
+                    kind: 'tableCell',
+                    key: n
+                });
+
+            }
+
+            function makeContexts(n) {
+                contexts = {}
+                for (var i = 0; i < n; ++i) {
+                    contexts[i] = createContext(i);
+                }
+                return contexts
+            }
+
+            var contexts = makeContexts(101);
+
+            const ldCellClient1 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[1]);
+            const ldCellClient2 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[2]);
+            const ldCellClient3 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[3]);
+            const ldCellClient4 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[4]);
+            const ldCellClient5 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[5]);
+            const ldCellClient6 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[6]);
+            const ldCellClient7 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[7]);
+            const ldCellClient8 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[8]);
+            const ldCellClient9 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[9]);
+            const ldCellClient10 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[10]);
+            const ldCellClient11 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[11]);
+            const ldCellClient12 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[12]);
+            const ldCellClient13 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[13]);
+            const ldCellClient14 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[14]);
+            const ldCellClient15 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[15]);
+            const ldCellClient16 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[16]);
+            const ldCellClient17 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[17]);
+            const ldCellClient18 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[18]);
+            const ldCellClient19 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[19]);
+            const ldCellClient20 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[20]);
+            const ldCellClient21 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[21]);
+            const ldCellClient22 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[22]);
+            const ldCellClient23 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[23]);
+            const ldCellClient24 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[24]);
+            const ldCellClient25 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[25]);
+            const ldCellClient26 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[26]);
+            const ldCellClient27 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[27]);
+            const ldCellClient28 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[28]);
+            const ldCellClient29 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[29]);
+            const ldCellClient30 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[30]);
+            const ldCellClient31 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[31]);
+            const ldCellClient32 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[32]);
+            const ldCellClient33 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[33]);
+            const ldCellClient34 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[34]);
+            const ldCellClient35 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[35]);
+            const ldCellClient36 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[36]);
+            const ldCellClient37 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[37]);
+            const ldCellClient38 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[38]);
+            const ldCellClient39 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[39]);
+            const ldCellClient40 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[40]);
+            const ldCellClient41 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[41]);
+            const ldCellClient42 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[42]);
+            const ldCellClient43 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[43]);
+            const ldCellClient44 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[44]);
+            const ldCellClient45 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[45]);
+            const ldCellClient46 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[46]);
+            const ldCellClient47 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[47]);
+            const ldCellClient48 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[48]);
+            const ldCellClient49 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[49]);
+            const ldCellClient50 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[50]);
+            const ldCellClient51 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[51]);
+            const ldCellClient52 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[52]);
+            const ldCellClient53 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[53]);
+            const ldCellClient54 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[54]);
+            const ldCellClient55 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[55]);
+            const ldCellClient56 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[56]);
+            const ldCellClient57 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[57]);
+            const ldCellClient58 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[58]);
+            const ldCellClient59 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[59]);
+            const ldCellClient60 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[60]);
+            const ldCellClient61 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[61]);
+            const ldCellClient62 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[62]);
+            const ldCellClient63 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[63]);
+            const ldCellClient64 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[64]);
+            const ldCellClient65 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[65]);
+            const ldCellClient66 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[66]);
+            const ldCellClient67 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[67]);
+            const ldCellClient68 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[68]);
+            const ldCellClient69 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[69]);
+            const ldCellClient70 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[70]);
+            const ldCellClient71 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[71]);
+            const ldCellClient72 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[72]);
+            const ldCellClient73 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[73]);
+            const ldCellClient74 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[74]);
+            const ldCellClient75 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[75]);
+            const ldCellClient76 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[76]);
+            const ldCellClient77 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[77]);
+            const ldCellClient78 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[78]);
+            const ldCellClient79 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[79]);
+            const ldCellClient80 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[80]);
+            const ldCellClient81 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[81]);
+            const ldCellClient82 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[82]);
+            const ldCellClient83 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[83]);
+            const ldCellClient84 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[84]);
+            const ldCellClient85 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[85]);
+            const ldCellClient86 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[86]);
+            const ldCellClient87 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[87]);
+            const ldCellClient88 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[88]);
+            const ldCellClient89 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[89]);
+            const ldCellClient90 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[90]);
+            const ldCellClient91 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[91]);
+            const ldCellClient92 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[92]);
+            const ldCellClient93 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[93]);
+            const ldCellClient94 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[94]);
+            const ldCellClient95 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[95]);
+            const ldCellClient96 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[96]);
+            const ldCellClient97 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[97]);
+            const ldCellClient98 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[98]);
+            const ldCellClient99 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[99]);
+            const ldCellClient100 = LDClient.initialize('60f80a31bbda2a24f5fe6908', contexts[100]);
+
+            
+</script>
+</body>
+<table class="table  table-striped .table-bordered .table-responsive">
+    <tbody>
+        <tr>
+            <td id="cell1">1 <script>ldCellClient1.on('ready',() => {document.getElementById("cell1").style.backgroundColor = ldCellClient1.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell2">2 <script>ldCellClient2.on('ready',() => {document.getElementById("cell2").style.backgroundColor = ldCellClient2.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell3">3 <script>ldCellClient3.on('ready',() => {document.getElementById("cell3").style.backgroundColor = ldCellClient3.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell4">4 <script>ldCellClient4.on('ready',() => {document.getElementById("cell4").style.backgroundColor = ldCellClient4.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell5">5 <script>ldCellClient5.on('ready',() => {document.getElementById("cell5").style.backgroundColor = ldCellClient5.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell6">6 <script>ldCellClient6.on('ready',() => {document.getElementById("cell6").style.backgroundColor = ldCellClient6.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell7">7 <script>ldCellClient7.on('ready',() => {document.getElementById("cell7").style.backgroundColor = ldCellClient7.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell8">8 <script>ldCellClient8.on('ready',() => {document.getElementById("cell8").style.backgroundColor = ldCellClient8.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell9">9 <script>ldCellClient9.on('ready',() => {document.getElementById("cell9").style.backgroundColor = ldCellClient9.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell10">10 <script>ldCellClient10.on('ready',() => {document.getElementById("cell10").style.backgroundColor = ldCellClient10.variation("rollout-flag", 'green');})</script></td>
+            </tr><tr>
+            <td id="cell11">11 <script>ldCellClient11.on('ready',() => {document.getElementById("cell11").style.backgroundColor = ldCellClient11.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell12">12 <script>ldCellClient12.on('ready',() => {document.getElementById("cell12").style.backgroundColor = ldCellClient12.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell13">13 <script>ldCellClient13.on('ready',() => {document.getElementById("cell13").style.backgroundColor = ldCellClient13.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell14">14 <script>ldCellClient14.on('ready',() => {document.getElementById("cell14").style.backgroundColor = ldCellClient14.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell15">15 <script>ldCellClient15.on('ready',() => {document.getElementById("cell15").style.backgroundColor = ldCellClient15.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell16">16 <script>ldCellClient16.on('ready',() => {document.getElementById("cell16").style.backgroundColor = ldCellClient16.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell17">17 <script>ldCellClient17.on('ready',() => {document.getElementById("cell17").style.backgroundColor = ldCellClient17.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell18">18 <script>ldCellClient18.on('ready',() => {document.getElementById("cell18").style.backgroundColor = ldCellClient18.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell19">19 <script>ldCellClient19.on('ready',() => {document.getElementById("cell19").style.backgroundColor = ldCellClient19.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell20">20 <script>ldCellClient20.on('ready',() => {document.getElementById("cell20").style.backgroundColor = ldCellClient20.variation("rollout-flag", 'green');})</script></td>
+        </tr><tr>
+            <td id="cell21">21 <script>ldCellClient21.on('ready',() => {document.getElementById("cell21").style.backgroundColor = ldCellClient21.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell22">22 <script>ldCellClient22.on('ready',() => {document.getElementById("cell22").style.backgroundColor = ldCellClient22.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell23">23 <script>ldCellClient23.on('ready',() => {document.getElementById("cell23").style.backgroundColor = ldCellClient23.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell24">24 <script>ldCellClient24.on('ready',() => {document.getElementById("cell24").style.backgroundColor = ldCellClient24.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell25">25 <script>ldCellClient25.on('ready',() => {document.getElementById("cell25").style.backgroundColor = ldCellClient25.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell26">26 <script>ldCellClient26.on('ready',() => {document.getElementById("cell26").style.backgroundColor = ldCellClient26.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell27">27 <script>ldCellClient27.on('ready',() => {document.getElementById("cell27").style.backgroundColor = ldCellClient27.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell28">28 <script>ldCellClient28.on('ready',() => {document.getElementById("cell28").style.backgroundColor = ldCellClient28.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell29">29 <script>ldCellClient29.on('ready',() => {document.getElementById("cell29").style.backgroundColor = ldCellClient29.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell30">30 <script>ldCellClient30.on('ready',() => {document.getElementById("cell30").style.backgroundColor = ldCellClient30.variation("rollout-flag", 'green');})</script></td>
+        </tr><tr>
+            <td id="cell31">31 <script>ldCellClient31.on('ready',() => {document.getElementById("cell31").style.backgroundColor = ldCellClient31.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell32">32 <script>ldCellClient32.on('ready',() => {document.getElementById("cell32").style.backgroundColor = ldCellClient32.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell33">33 <script>ldCellClient33.on('ready',() => {document.getElementById("cell33").style.backgroundColor = ldCellClient33.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell34">34 <script>ldCellClient34.on('ready',() => {document.getElementById("cell34").style.backgroundColor = ldCellClient34.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell35">35 <script>ldCellClient35.on('ready',() => {document.getElementById("cell35").style.backgroundColor = ldCellClient35.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell36">36 <script>ldCellClient36.on('ready',() => {document.getElementById("cell36").style.backgroundColor = ldCellClient36.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell37">37 <script>ldCellClient37.on('ready',() => {document.getElementById("cell37").style.backgroundColor = ldCellClient37.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell38">38 <script>ldCellClient38.on('ready',() => {document.getElementById("cell38").style.backgroundColor = ldCellClient38.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell39">39 <script>ldCellClient39.on('ready',() => {document.getElementById("cell39").style.backgroundColor = ldCellClient39.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell40">40 <script>ldCellClient40.on('ready',() => {document.getElementById("cell40").style.backgroundColor = ldCellClient40.variation("rollout-flag", 'green');})</script></td>
+        </tr><tr>
+            <td id="cell41">41 <script>ldCellClient41.on('ready',() => {document.getElementById("cell41").style.backgroundColor = ldCellClient41.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell42">42 <script>ldCellClient42.on('ready',() => {document.getElementById("cell42").style.backgroundColor = ldCellClient42.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell43">43 <script>ldCellClient43.on('ready',() => {document.getElementById("cell43").style.backgroundColor = ldCellClient43.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell44">44 <script>ldCellClient44.on('ready',() => {document.getElementById("cell44").style.backgroundColor = ldCellClient44.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell45">45 <script>ldCellClient45.on('ready',() => {document.getElementById("cell45").style.backgroundColor = ldCellClient45.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell46">46 <script>ldCellClient46.on('ready',() => {document.getElementById("cell46").style.backgroundColor = ldCellClient46.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell47">47 <script>ldCellClient47.on('ready',() => {document.getElementById("cell47").style.backgroundColor = ldCellClient47.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell48">48 <script>ldCellClient48.on('ready',() => {document.getElementById("cell48").style.backgroundColor = ldCellClient48.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell49">49 <script>ldCellClient49.on('ready',() => {document.getElementById("cell49").style.backgroundColor = ldCellClient49.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell50">50 <script>ldCellClient50.on('ready',() => {document.getElementById("cell50").style.backgroundColor = ldCellClient50.variation("rollout-flag", 'green');})</script></td>
+        </tr><tr>
+            <td id="cell51">51 <script>ldCellClient51.on('ready',() => {document.getElementById("cell51").style.backgroundColor = ldCellClient51.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell52">52 <script>ldCellClient52.on('ready',() => {document.getElementById("cell52").style.backgroundColor = ldCellClient52.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell53">53 <script>ldCellClient53.on('ready',() => {document.getElementById("cell53").style.backgroundColor = ldCellClient53.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell54">54 <script>ldCellClient54.on('ready',() => {document.getElementById("cell54").style.backgroundColor = ldCellClient54.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell55">55 <script>ldCellClient55.on('ready',() => {document.getElementById("cell55").style.backgroundColor = ldCellClient55.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell56">56 <script>ldCellClient56.on('ready',() => {document.getElementById("cell56").style.backgroundColor = ldCellClient56.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell57">57 <script>ldCellClient57.on('ready',() => {document.getElementById("cell57").style.backgroundColor = ldCellClient57.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell58">58 <script>ldCellClient58.on('ready',() => {document.getElementById("cell58").style.backgroundColor = ldCellClient58.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell59">59 <script>ldCellClient59.on('ready',() => {document.getElementById("cell59").style.backgroundColor = ldCellClient59.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell60">60 <script>ldCellClient60.on('ready',() => {document.getElementById("cell60").style.backgroundColor = ldCellClient60.variation("rollout-flag", 'green');})</script></td>
+        </tr><tr>
+            <td id="cell61">61 <script>ldCellClient61.on('ready',() => {document.getElementById("cell61").style.backgroundColor = ldCellClient61.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell62">62 <script>ldCellClient62.on('ready',() => {document.getElementById("cell62").style.backgroundColor = ldCellClient62.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell63">63 <script>ldCellClient63.on('ready',() => {document.getElementById("cell63").style.backgroundColor = ldCellClient63.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell64">64 <script>ldCellClient64.on('ready',() => {document.getElementById("cell64").style.backgroundColor = ldCellClient64.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell65">65 <script>ldCellClient65.on('ready',() => {document.getElementById("cell65").style.backgroundColor = ldCellClient65.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell66">66 <script>ldCellClient66.on('ready',() => {document.getElementById("cell66").style.backgroundColor = ldCellClient66.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell67">67 <script>ldCellClient67.on('ready',() => {document.getElementById("cell67").style.backgroundColor = ldCellClient67.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell68">68 <script>ldCellClient68.on('ready',() => {document.getElementById("cell68").style.backgroundColor = ldCellClient68.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell69">69 <script>ldCellClient69.on('ready',() => {document.getElementById("cell69").style.backgroundColor = ldCellClient69.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell70">70 <script>ldCellClient70.on('ready',() => {document.getElementById("cell70").style.backgroundColor = ldCellClient70.variation("rollout-flag", 'green');})</script></td>
+        </tr><tr>
+            <td id="cell71">71 <script>ldCellClient71.on('ready',() => {document.getElementById("cell71").style.backgroundColor = ldCellClient71.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell72">72 <script>ldCellClient72.on('ready',() => {document.getElementById("cell72").style.backgroundColor = ldCellClient72.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell73">73 <script>ldCellClient73.on('ready',() => {document.getElementById("cell73").style.backgroundColor = ldCellClient73.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell74">74 <script>ldCellClient74.on('ready',() => {document.getElementById("cell74").style.backgroundColor = ldCellClient74.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell75">75 <script>ldCellClient75.on('ready',() => {document.getElementById("cell75").style.backgroundColor = ldCellClient75.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell76">76 <script>ldCellClient76.on('ready',() => {document.getElementById("cell76").style.backgroundColor = ldCellClient76.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell77">77 <script>ldCellClient77.on('ready',() => {document.getElementById("cell77").style.backgroundColor = ldCellClient77.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell78">78 <script>ldCellClient78.on('ready',() => {document.getElementById("cell78").style.backgroundColor = ldCellClient78.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell79">79 <script>ldCellClient79.on('ready',() => {document.getElementById("cell79").style.backgroundColor = ldCellClient79.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell80">80 <script>ldCellClient80.on('ready',() => {document.getElementById("cell80").style.backgroundColor = ldCellClient80.variation("rollout-flag", 'green');})</script></td>
+        </tr><tr>
+            <td id="cell81">81 <script>ldCellClient81.on('ready',() => {document.getElementById("cell81").style.backgroundColor = ldCellClient81.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell82">82 <script>ldCellClient82.on('ready',() => {document.getElementById("cell82").style.backgroundColor = ldCellClient82.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell83">83 <script>ldCellClient83.on('ready',() => {document.getElementById("cell83").style.backgroundColor = ldCellClient83.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell84">84 <script>ldCellClient84.on('ready',() => {document.getElementById("cell84").style.backgroundColor = ldCellClient84.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell85">85 <script>ldCellClient85.on('ready',() => {document.getElementById("cell85").style.backgroundColor = ldCellClient85.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell86">86 <script>ldCellClient86.on('ready',() => {document.getElementById("cell86").style.backgroundColor = ldCellClient86.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell87">87 <script>ldCellClient87.on('ready',() => {document.getElementById("cell87").style.backgroundColor = ldCellClient87.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell88">88 <script>ldCellClient88.on('ready',() => {document.getElementById("cell88").style.backgroundColor = ldCellClient88.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell89">89 <script>ldCellClient89.on('ready',() => {document.getElementById("cell89").style.backgroundColor = ldCellClient89.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell90">90 <script>ldCellClient90.on('ready',() => {document.getElementById("cell90").style.backgroundColor = ldCellClient90.variation("rollout-flag", 'green');})</script></td>
+        </tr><tr>
+            <td id="cell91">91 <script>ldCellClient91.on('ready',() => {document.getElementById("cell91").style.backgroundColor = ldCellClient91.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell92">92 <script>ldCellClient92.on('ready',() => {document.getElementById("cell92").style.backgroundColor = ldCellClient92.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell93">93 <script>ldCellClient93.on('ready',() => {document.getElementById("cell93").style.backgroundColor = ldCellClient93.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell94">94 <script>ldCellClient94.on('ready',() => {document.getElementById("cell94").style.backgroundColor = ldCellClient94.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell95">95 <script>ldCellClient95.on('ready',() => {document.getElementById("cell95").style.backgroundColor = ldCellClient95.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell96">96 <script>ldCellClient96.on('ready',() => {document.getElementById("cell96").style.backgroundColor = ldCellClient96.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell97">97 <script>ldCellClient97.on('ready',() => {document.getElementById("cell97").style.backgroundColor = ldCellClient97.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell98">98 <script>ldCellClient98.on('ready',() => {document.getElementById("cell98").style.backgroundColor = ldCellClient98.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell99">99 <script>ldCellClient99.on('ready',() => {document.getElementById("cell99").style.backgroundColor = ldCellClient99.variation("rollout-flag", 'green');})</script></td>
+            <td id="cell100">100<script>ldCellClient100.on('ready',() => {document.getElementById("cell100").style.backgroundColor = ldCellClient100.variation("rollout-flag", 'green');})</script></td>
+        </tr>
+        </tbody>
+</table>
+
+
+
+
+</html>
